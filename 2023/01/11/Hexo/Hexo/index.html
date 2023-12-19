@@ -31,7 +31,7 @@
 <meta property="og:description" content="常用指令Run server123hexo serverorhexo s Run a local server. You will recieve a link that you can open at local.Open the link with command button. If there are edits in the file, the page will be update">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-01-12T01:04:15.000Z">
-<meta property="article:modified_time" content="2023-12-19T09:37:35.854Z">
+<meta property="article:modified_time" content="2023-12-19T09:42:05.549Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -115,10 +115,10 @@
 <p>Deploy it on the internet.</p>
 <!-- 部署到網路上 -->
 
-<p>Remember to clean the cache file and generated file. Cause it will appear every time after you enter the command.</p>
+<p>Remember to clean the cache file and generated file. Cause it will appear every time after you enter the command.<br>Recommend to do these two step before you deploy to github. Avoiding update not completely.<br>clean -&gt; generate -&gt; deploy</p>
 <!-- 每次有刪除、新增、修改文件後  
 記得都要清空、建立   -->
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
 <h3 id="Insert-the-image"><a href="#Insert-the-image" class="headerlink" title="Insert the image"></a>Insert the image</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="title class_">Description</span>](<span class="regexp">/images/</span>picturename.<span class="property">png</span>)</span><br></pre></td></tr></table></figure>
 <p>Create a directory called images, and put all the images in this directory.<br>All posts will need to refer to the images using the path &#x2F;images&#x2F;[fileName].</p>
